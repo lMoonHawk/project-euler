@@ -35,14 +35,18 @@ def main():
     def is_prime(n):
         if n <= 1:
             return False
+        if n < 1000:
+            return n in prime_1000
         for i in range(2, int(n**0.5) + 1):
             if not n % i:
                 return False
         return True
 
+    prime_1000 = primes(1_000)
+
     max_primes = 0
     for a in range(-999, 1_000, 2):  # a must be odd of n=1
-        for b in primes(1_000):
+        for b in prime_1000:
             n = 0
             while is_prime(n**2 + a * n + b):  # b must be prime for n=0
                 n += 1
