@@ -56,10 +56,4 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    # main2()
-
-    from timeit import timeit
-
-    print(timeit(main, number=1))
-    # print(timeit(main2, number=1))
+    main()
