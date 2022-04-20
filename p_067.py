@@ -17,8 +17,8 @@
 # NOTE: This is a much more difficult version of Problem 18. It is not possible
 #   to try every route to solve this problem, as there are 299 altogether!
 #   If you could check one trillion (1012) routes every second it would take
-#   over twenty billion years to check them all. There is an efficient algorithm
-#   to solve it. ;o)
+#   over twenty billion years to check them all. There is an efficient
+#   algorithm to solve it. ;o)
 
 triangle = []
 with open("inputs/p067_triangle.txt") as f:
